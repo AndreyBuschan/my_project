@@ -1,3 +1,13 @@
+.nav{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav li{
+    float:left; /* все ссылки идут слева на право */
+}
+
 .button {
     width: 166.46px;
     height:38px;

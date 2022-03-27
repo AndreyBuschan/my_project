@@ -1,0 +1,23 @@
+.nav{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav li{
+    float:left; /* все ссылки идут слева на право */
+}
+
+.button {
+    width: 166.46px;
+    height:38px;
+    background: #070707;
+    border-radius:100px;
+    border: nones;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    color: #ffffff;
+}

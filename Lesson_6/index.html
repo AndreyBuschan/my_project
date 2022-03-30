@@ -4,106 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.google.com/css?family=Roboto:100,300,400&amp;display=swap" rel="staylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Lesson 6 Landing Page</title>
 </head>
 <body>
     <header>
-            <ul class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">About me</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
+        <div class="container">
+            <nav class="nav">
+            <a class="nav__link nav__link--active">Home</a>
+            <a class="nav__link" href="#">About me</a>
+            <a class="nav__link" href="#">Skills</a>
+            <a class="nav__link" href="#">Portfolio</a>
+            <a class="nav__link" href="#">Contacts</a>
+            </nav>
+            <hr class="hr">
+        </div>
     </header>
     <main>
         <section>
-            <h1>Denis Novik</h1>
-            <img src="img/Denis_Novik/BSPP2266x940.svg" alt="">
+            <div class="container">
+                <h1 class="den">Denis Novik</h1>
+                <img class="denfoto" src="img/Denis_Novik/BSPP2266x940.svg" alt="">
+            </div>
         </section>
-        <section>
-            <h2>About me</h2>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk. 
-            I'm interested in design and everything connected with it.
-                    
-            I'm studying at courses "Web and mobile design 
-            interfaces" in IT-Academy.
-                    
-            Ready to implement excellent projects
-            with wonderful people.</p>
+        <section class="bg-gray">
+            <div class="container">
+                <h2 class="heading">About me</h2>
+                <p class="content">Hi, I'm Denis – UX/UI designer from Minsk. <br>     
+                I'm interested in design and everything connected with it.<br><br>  
+                            
+                I'm studying at courses "Web and mobile design <br> 
+                interfaces" in IT-Academy.<br><br>  
+                            
+                Ready to implement excellent projects<br> 
+                with wonderful people.</p>
+            </div>
         </section>
-        <section>
-            <h3>Skills</h3>
-            <p>I work in such programs as</p>
-            <img src="img/Skills/Ae_background.png">
-            <img src="img/Skills/Ae.svg">
-            <p>Adobe Photoshop</p>
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarGray.svg">
-
-            <img src="img/Skills/Ai_background.png">
-            <img src="img/Skills/Ai.svg">
-            <p>Adobe Illustrator</p>
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarGray.svg">
-            <img src="img/Skills/StarGray.svg">
-
-            <img src="img/Skills/Ae_background.png">
-            <img src="img/Skills/Ae.svg">
-            <p>Adobe After Effects</p>
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarGray.svg">
-
-            <img src="img/Skills/path1 fill 2.svg">
-            <img src="img/Skills/path2 fill 1.svg">
-            <img src="img/Skills/path1 fill 3.svg">
-            <img src="img/Skills/path3 fill 1.svg">
-            <img src="img/Skills/path0 fill 1.svg">
-            <p>Figma</p>
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarBlack.svg">
-            <img src="img/Skills/StarGray.svg">
+        <section class="container">
+            <h3 class="heading">Skills</h3>
+            <p class="content">I work in such programs as</p>
+                <div class="wrapper">
+                    <div class="block">
+                        <img class="icon" src="img/Skills/PS.svg"/>
+                        <p class="skillname">Adobe </br> Photoshop</p>
+                            <div>
+                                <img class="star" src="img/Skills/star4.svg"/>
+                            </div>
+                    </div>
+                    <div class="block">
+                        <img class="icon" src="img/Skills/Ai.svg"/>
+                        <p class="skillname">Adobe </br> Illustrator</p>
+                            <div>
+                                <img class="star" src="img/Skills/star3.svg"/>
+                            </div>
+                    </div>
+                    <div class="block">
+                        <img class="icon" src="img/Skills/Ae.svg"/>
+                        <p class="skillname">Adobe </br> After Effects</p>
+                            <div>
+                                <img class="star" src="img/Skills/star4.svg"/>
+                            </div>
+                    </div>
+                    <div class="block">
+                        <img class="icon" src="img/Skills/Figma.svg"/>
+                        <p class="skillname">Figma </p>
+                            <div>
+                                <img class="star" src="img/Skills/star4.svg"/>
+                            </div>
+                    </div>  
+                </div>     
         </section>
-        <section>
-            <h3>Portfolio</h3>
-            <img src="img/Portfolio/FashionStore.svg" alt="">
-            <p>Online fashion store - Homepage</p>
-            <img src="img/Portfolio/ReebokStore.svg" alt="">
-            <p>Reebok Store - Concept</p>
-            <img src="img/Portfolio/BraunStore.svg" alt="">
-            <p>Braun Landing Page - Concept</p>
+        <section class="bg-gray">
+            <div class="container">
+                <h4 class="heading">Portfolio</h4>
+                <img src="img/Portfolio/FashionStore.svg" alt="">
+                <p class="content">Online fashion store - </br> Homepage</p>
+                <img src="img/Portfolio/ReebokStore.svg" alt="">
+                <p class="content">Reebok Store - Concept</p>
+                <img src="img/Portfolio/BraunStore.svg" alt="">
+                <p class="content">Braun Landing Page - Concept</p>
+            </div>
         </section>
     </main>
     <footer>
-        <h3>Contacts</h3>
-        <p>Want to know more or just chat? You are welcome!</p>
+        <div class="container">
+            <h5 class="heading">Contacts</h5>
+            <p class="content">Want to know more or just chat? </br> You are welcome!</p>
+        </div>
         <button class="button">Send message</button>
-        <img src="img/Footer/LinkedIn/frame.svg">
-        <img src="img/Footer/LinkedIn/I1.svg">
-        <img src="img/Footer/LinkedIn/I2.svg">
-        <img src="img/Footer/LinkedIn/N.svg">
-
-        <img src="img/Footer/Instagram/icon.svg">
-
-        <img src="img/Footer/Behance/frame.svg">
-        <img src="img/Footer/Behance/B.svg">
-        <img src="img/Footer/Behance/dash .svg">
-        <img src="img/Footer/Behance/E.svg">
-
-        <img src="img/Footer/Dribbble/icon.svg">
-        <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
-    </footer>
+        <div class="social">
+            <div class="wrapper">
+                <div>
+                    <img class="logo" src="img/Footer/linkedin.svg"/>
+                </div>
+                <div>
+                    <img class="logo" src="img/Footer/instagram.svg"/>
+                </div>
+                <div>
+                    <img class="logo" src="img/Footer/behance.svg"/>
+                </div>
+                <div>
+                    <img class="logo" src="img/Footer/dribbble.svg"/>
+                </div>  
+            </div>  
+        </div>   
+        <p class="text">Like me on </br> LinkedIn, Instagram, Behance, </br> Dribble</p>
+    </footer> 
 </body>
 </html>

@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: #3B3F45;
+}
+
+p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color:#fff;
+}
+.title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FF8984;
+}
+
+.text {
+    margin-top: 5px;
+    font-family: 'Open Sans';
+    font-style: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF8984;
+}    
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.bg-graphite {
+    padding: 20px 0;
+    background: #4A4F56;
+}
+
+.shopping-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .shopping-list-item {
+    background: #88839E;
+  }
+  
+  .item-text {
+    display: inline;
+    margin: 0;
+    vertical-align: middle;
+  }
+  
+  .shopping-list-item:nth-child(odd) {
+    background-color: #9B96AC;
+  }
+  
+  .item-label {
+    padding: 12px;
+    display: block;
+  }
+  
+  .item-checkbox {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  .shopping-list-item:hover {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .item-checkbox:checked + .item-text .item-desc {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+  
+  .item-desc::after {
+    content: ' (for the next lessons about CSS)';
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+  .item-checkbox:checked + .item-text .item-desc1 {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+
+  .item-desc1::after {
+    content: ' (for more CSS manipulations)';
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+  .item-checkbox:checked + .item-text .item-desc2 {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+
+  .item-desc2::after {
+    content: ' (because they are awesome)';
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+  .item-checkbox:checked + .item-text .item-desc3 {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+
+  .item-desc3::after {
+    content: ' (hm... they always dissapear)';
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+  .item-checkbox:checked + .item-text .item-desc4 {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+
+  .item-desc4::after {
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+  .item-checkbox:checked + .item-text .item-desc5 {
+    text-decoration: line-through;
+    color:#3B3F45;
+  }
+
+  .item-desc5::after {
+    content: ' (for my friends)';
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+  }
+
+.button {
+    margin-top: 45px;
+    width: 550px;
+    height: 45px;
+    background: #4A4F56;
+    color: #FF8984;
+}

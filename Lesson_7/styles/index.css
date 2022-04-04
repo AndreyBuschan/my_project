@@ -1,0 +1,156 @@
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: #070707;
+    line-height: 25px;
+    background-color: #fff;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container {
+   max-width: 943px;
+   margin: 0 auto;
+}
+
+.heading {
+   font-weight: 700;
+   font-size: 34px;
+   line-height: 46px;
+}
+
+.nav{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    padding: 23px 0;
+    /* position: relative;
+    top: 23px; */
+}
+
+.nav li{
+    /* display: inline; */
+    /* font-size: 18px; */
+    /* line-height: 25px; */
+    /* width: 190px; */ /* 494,32px;  */
+}
+
+.nav a:hover{
+    color: black;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-top: 23px;
+    margin-right: 41px;
+    color: #828282;
+}
+
+.hr{
+    width: 940.6px;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.den{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 40px;
+    /* top: 110px; */
+    /* padding: 0; */
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+.denfoto{
+    margin-left: 0px;
+    margin-top: 120px;
+}
+
+.bg-gray {
+    background: #F6F6F6;
+    padding: 100px 0;
+    margin: 100px auto;
+  }
+
+.content{
+    margin: 30px auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+
+.block{
+    max-width: 170px;
+    margin: 0px auto;
+}
+
+.icon{
+    max-width: 90px;
+    max-height: 88px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.skillname{
+    /* max-width: 80px; */
+    height: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.star{
+    max-width: 170px;
+    margin: 50px auto;
+}
+
+.button {
+    margin-top: 50px;
+    width: 167px;
+    height:38px;
+    background: #070707;
+    border-radius:100px;
+    border: nones;
+    font-style: normal;
+    font-weight: 700 bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.social {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-family: 'Open Sans';
+    font-style: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;

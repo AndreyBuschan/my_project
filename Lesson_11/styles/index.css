@@ -1,6 +1,3 @@
-* {
-}
-
 @font-face {
   font-family: PT Sans;
   src: url("fonts/PTSans-Bold.ttf");
@@ -19,12 +16,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase; /* CAPS LOCK */
 }
 
-h5 {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
-}
-
 p {
   font-family: 'Roboto';
   font-style: normal;
@@ -32,8 +23,6 @@ p {
   font-size: 36px;
   line-height: 48px;
   margin: 50px auto 50px auto;
-  /* margin-top: 15px;
-  margin-bottom: 15px; */
 }
 
 .container {
@@ -43,8 +32,12 @@ p {
 
 .block1 {
   display: flex;
-  /* justify-content: space-around;
-  align-items: flex-start; */
+  justify-content:left;
+  flex-direction: row;
+  /* text-align: left; */
   margin-right: 10px;
 }
 
+.codetext {
+  background-color: #C9C9C9;
+}

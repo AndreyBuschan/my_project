@@ -1,0 +1,50 @@
+* {
+}
+
+@font-face {
+  font-family: PT Sans;
+  src: url("fonts/PTSans-Bold.ttf");
+}
+
+body {
+  color: #000;
+}
+
+h1, h2, h3, h4 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase; /* CAPS LOCK */
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 50px auto 50px auto;
+  /* margin-top: 15px;
+  margin-bottom: 15px; */
+}
+
+.container {
+  max-width: 1900px;
+  margin: 150px 20px 500px 40px;
+}
+
+.block1 {
+  display: flex;
+  /* justify-content: space-around;
+  align-items: flex-start; */
+  margin-right: 10px;
+}
+

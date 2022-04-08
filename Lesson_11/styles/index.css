@@ -1,6 +1,6 @@
 @font-face {
   font-family: PT Sans;
-  src: url("fonts/PTSans-Bold.ttf");
+  src: url("..fonts/PTSans-Bold.ttf");
 }
 
 body {
@@ -38,6 +38,6 @@ p {
   margin-right: 10px;
 }
 
-.codetext {
+.code {
   background-color: #C9C9C9;
 }

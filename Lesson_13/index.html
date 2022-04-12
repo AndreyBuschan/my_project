@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 13 Styling Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <h1>Create an Account</h1>
+      <div class="form">
+        <div class="form-field">
+          <label for="first-name">First Name</label>
+          <input class="form-input" type="text" id="first-name" value="" name="first-name" autofocus required minlength="3">
+        </div>
+        <div class="form-field">
+          <label for="first-name">Last Name</label>
+          <input class="form-input" type="text" id="last-name" value="" name="last-name">
+        </div>
+      </div>
+      <div class="form-email">
+        <label for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email">
+      </div>
+      <p class="text">We'll never share your email with anyone else.</p>
+      <div class="row">
+        <div>
+          <input class="rings" type="radio" name="ring">
+          <label for="">Male</label>
+        </div>
+        <div>
+          <input class="rings" type="radio" name="ring">
+          <label for="">Female</label>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-field">
+          <label for="country">Country</label>
+          <select class="form-select" id="Country" name="country">
+            <option value="" disabled="disabled" selected="selected" hidden>Select</option>
+            <option value="december">Ukraine</option>
+            <option value="october">USA</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="first-name">City</label>
+          <input class="form-input" type="text" id="City" value="" name="City">
+        </div>
+      </div>
+      <div class="form-email">
+        <input class="form-input" type="text">
+      </div>
+      <div>
+        <p class="privecy">By clicking the 'Sign Up' button, you confirm that you accept our <br>
+          <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.
+        </p>
+      </div>
+      <hr>
+      <div class="footer">
+        Have an account?
+        <button class="btn">
+          Log In
+        </button>
+      </div>
+    </div>
+
+    
+    <div class="box2">
+      <h2>Profile</h2>
+      <div class="form2">
+        <div>
+          <img class="img" src="img/avatar.png" alt="">
+        </div>
+        <div class="form-foto">
+          <div class="form-file">
+            <input class="download" type="file" id="download" value="" name="download">
+            <input class="delete" type="button" id="delete" value="" name="delete"/>
+          </div>
+          <div>
+            <p>Up to 1 MB (300x300 px)</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form">
+        <div class="form-field">
+          <label for="first-name">Name</label>
+          <input class="form-input" type="text" id="Name" value="" name="Name">
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input class="form-input" type="email" id="email2" name="email">
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-field">
+          <label for="country">Country</label>
+          <select class="form-select" id="Country2" name="country2">
+            <option value="" disabled="disabled" selected="selected" hidden>Select</option>
+            <option value="december">Ukraine</option>
+            <option value="october">USA</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="first-name">City</label>
+          <input class="form-input" type="text" id="City2" value="" name="City2">
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-field">
+          <label for="first-name">Zip Code</label>
+          <input class="form-input" type="text" id="ZipCode" value="" name="ZipCode" required pattern="[0-9]{5}">
+        </div>
+        <div class="form-field">
+          <label for="first-name">Phone Namber</label>
+          <input class="form-input" type="text" id="PhoneNamber" value="" name="PhoneNamber">
+        </div>
+      </div>
+      <div class="form-other">
+        <input class="form-input" type="text">
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
+
+</html>

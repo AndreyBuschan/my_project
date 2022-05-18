@@ -29,7 +29,7 @@ function myFn (a, b) {
   
   if (a < b){
     return '-1';
-  } else if (a == b) {
+  } else if (a === b) {
     return '0';
   } else if (a > b) {
     return '1';
@@ -48,18 +48,18 @@ function factorial(n) {
 console.log( factorial(n));
 
 //5
-let s = +prompt ('Первое число');
-let d = +prompt ('Второе число');
-let f = +prompt ('Третье число');
+let s = +prompt('Первое число');
+let d = +prompt('Второе число');
+let f = +prompt('Третье число');
 let tripleNumber = (s,d,f) => +(''+s+d+f)
 console.log(tripleNumber(s,d,f))
 
 //6
 let w = +prompt ('width');
 let h = +prompt ('height');
-function rectS(w, h) {
-  if (h != Number) {
-    return w * 2;
+function rectSurface(w, h) {
+  if (h !== undefined) {
+    return w ** 2;
   }
   return w * h;
 }

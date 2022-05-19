@@ -1,118 +1,118 @@
-// Class work
+/* function myFn() {
+  return myFn.length; 
+}
+console.log(myFn(13, 24, 56)); */
 
-/* const month = prompt ('Enter month')
 
-switch (month) {
-  case '1':
-    alert('It`s Jan');
-    break;
-  case '2':
-    alert('It`s Feb');
-    break;
-  case '3':
-    alert('It`s Mar');
-    break;
-  case '4':
-    alert('It`s Apr');        
-    break;
-  default:
-    break;
-} */
+//
+/* function calcfactorial(n) {
+  let factorial = 1;
+  let i = 0;
 
-//Калькулятор
-/* const firstOperand = +prompt('Enter first operand');
-const secondOperand = +prompt('Enter second operand');
-const operator = prompt('Enter an operator');
-let result = null;
+  while (i < n) {
+    i++;
+    factorial = factorial * i; 
+  }
 
-switch (operator) {
-  case '+':
-    result = firstOperand + secondOperand;
-    break;
-  case '-':
-    result = firstOperand - secondOperand;
-    break;  
-  case '/':
-    result = firstOperand / secondOperand;
-    break;
-  case '*':
-    result = firstOperand * secondOperand;
-    break;  
-
-  default:
-    break;
+  return factorial;
 }
 
-alert('Result is ${result}'); */
+console.log('calcfactorial', calcfactorial(10)); */
 
+//
+/* 
+function toNumber(a, b, c) {
+  return Number(`${a}${b}${c}`)
+}
+console.log('toNumber-->', toNumber(1, 2, 3)); */
 
-/* const num = 100;
-let i = 0;
-let msg = '';
+//
+/* function calcSquare(w, h) {
+  if (arguments.length === 0) {
+    return 'No arguments';
+  }
 
-while (i < num) {
-  i++;
+  if (!h) {
+    return w ** 2;
+  }
 
-  if (i % 3 === 0) {
-    msg = msg + ' #';
+  return w * h;
+}
+console.log(calcSquare(5, 6)); */
+
+//
+/* function checkIsWork(num) {
+  let result = 0;
+
+  for (let i = 0; i < num; i++) {
+    if (num % i === 0) {
+      result = result + i;
+    }
+  }
+
+  if (result === num) { //Закоментить
+    return true
+  } else {
+    return false;
+  }
+
+  return result === num ? true : false;
+}
+
+console.log(checkIsWork(6)); */
+
+//
+/* function checkIsPerfect(from, to) {
+  for (let i = from; i <= to; i++){
+    if (checkIsWork(i)) {
+      console.log(i);
+    }
   }
 }
 
-console.log(msg); */
+console.log(checkIsPerfect(5, 10000)); */
 
-/* const num = prompt('Enter num!');
-let factorial = 1;
 
-while (i < num) {
-  i++;
-  factorial = factorial * i;
+
+
+// rest/spread ((a, b, c, ...numbers) залишок/ (...numbers) поширення)
+
+/* const showArds = (...nums) => {
+  console.log(nums.length);
+}
+console.log(showArds(1, 2, 4, 6));
+
+
+
+const findMinMax = (a, b, c, ...numbers) => {
+  const min = Math.min(...numbers);
+  const max = Math.max(...numbers);
+
+  return 'Min number is ${min}, Max number is ${max}.'
 }
 
-console.log(factorial); */
+console.log(findMinMax (3, -1, 0, 5, 3, 6, 2, 67, 90, 34, 34, 77, 222, 90)); */
 
 
 
-/////////WHILE
-/* const num = +prompt('Enter num!');
-let i = num;
+// CollBack
 
-while (i > 0) {
-  console.log(i);
-  i--;
+/* const isAllow = (age) => age < 21 ? false : true;
+
+const showErrorMsg = () => {
+  alert("Access denied")
 }
 
-alert(i) */
+const showSuccessMsg = () => {
+  alert("Access granted")
+}
 
+const handleAccess = (age, checkAge, showError, showSuccess) => {
+  if (checkAge(age)) {
+    showSuccess();
+  } else {
+    showError()
+  }
+}
 
-
-//////////DO WHILE
-
-/* let i = 0;
-
-do {
-  i++;
-  console.log(i);
-} while (i < 10) */
-
-
-
-
-/* let num = 1000;
-let i = 0;
-
-do {
-  console.log(num)
-
-  i++;
-} while (num / 2 > 50)
-
-console.log(i); */
-
-
-/* const question = +prompt('2 + 2 * 2'); */
-
-/* do {
-  const question = +prompt('2 + 2 * 2');
-} while (question !== 6)
-console.log('OK'); */
-
+handleAccess(22, isAllow, showErrorMsg, showSuccessMsg); */

@@ -58,35 +58,40 @@ console.log(tripleNumber(s,d,f))
 let w = +prompt ('width');
 let h = +prompt ('height');
 function rectSurface(w, h) {
+
   if (h !== undefined) {
     return w ** 2;
   }
+
   return w * h;
 }
-console.log(rectS(w, h));
+console.log(rectSurface(w, h));
 
 
 //Норма
 
 //1
-let number = +prompt ('Perfect number');
-function is_perfect(number) {
-let temp = 0;
-  
-  for (let i = 1; i <= number / 2; i++) {
-  if (number % i === 0) {
-    temp += i;
+function checkIsWork(num) {
+  let result = 0;
+
+  for (let i = 0; i < num; i++) {
+    if (num % i === 0) {
+      result = result + i;
     }
   }
-    
-  if (temp === number && temp !== 0) {
-  return 'Это идеальное число';
-  } else {
-  return 'Это не идеальное число';
-  }  
+
+  return result === num ? true : false;
 }
-console.log(is_perfect(number));
+
+console.log(checkIsWork(6)); 
 
 //2
+function checkIsPerfect(from, to) {
+  for (let i = from; i <= to; i++){
+    if (checkIsWork(i)) {
+      console.log(i);
+    }
+  }
+}
 
-
+console.log(checkIsPerfect(5, 10000));

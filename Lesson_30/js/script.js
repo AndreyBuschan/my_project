@@ -17,10 +17,11 @@ shoppingList.sort(function (a, b) {
 shoppingList.sort();  
 
 
-function removeItem(shoppingList, name) {
+function buyItem(shoppingList, name) {
   return name;
 }
 
-removeItem(shoppingList, 'banana');
+buyItem(shoppingList, 'banana');
 
 
+shoppingList.slice(3, 2);

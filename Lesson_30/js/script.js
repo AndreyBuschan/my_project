@@ -1,8 +1,10 @@
+
 const shoppingList = [{name: 'apple', price: 1, quantity: 3, bought: true}, 
   {name: 'orange', price: 2, quantity: 4, bought: false}, 
   {name: 'banana', price: 3, quantity: 5, bought: false},
   {name: 'apricot', price: 4, quantity: 6, bought: true}]
 
+console.log(shoppingList);  
 
 shoppingList.sort(function (a, b) {
   if (a.bought > b.bought) {
@@ -14,14 +16,15 @@ shoppingList.sort(function (a, b) {
   return 0;
   });
 
-shoppingList.sort();  
+console.log(shoppingList.sort());  
 
+function buyItem(element) {
+  let basket = [];
+  let total = basket.concat(element);
 
-function buyItem(shoppingList, name) {
-  return name;
+  return total
 }
+console.log(shoppingList[3]);
 
-buyItem(shoppingList, 'banana');
 
-
-shoppingList.slice(3, 2);
+console.log(shoppingList.splice(3, 2));

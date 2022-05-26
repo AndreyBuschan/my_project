@@ -4,27 +4,40 @@ const shoppingList = [{name: 'apple', price: 1, quantity: 3, bought: true},
   {name: 'banana', price: 3, quantity: 5, bought: false},
   {name: 'apricot', price: 4, quantity: 6, bought: true}]
 
-console.log(shoppingList);  
-
+//
 shoppingList.sort(function (a, b) {
   if (a.bought > b.bought) {
+    return 1;
+    }
+  if (a.bought < b.bought) {
     return -1;
   }
-  if (a.bought < b.bought) {
-    return 1;
-  }
   return 0;
-  });
+});
 
 console.log(shoppingList.sort());  
 
-function buyItem(element) {
-  let basket = [];
-  let total = basket.concat(element);
+//
+function buyItem(shoppingList, name) {
+  return shoppingList.map(function(el) {    // либо filter, но тогда покажет только один обьект и нужно удалить "else { return el }". 
+    if (el.name === name) {
+      return  {
+        ...el,
+        bought: el.bought = true,
+        }
+      } else {
+        return el;
+      }
+  });
+}  
 
-  return total
+console.log(buyItem(shoppingList, 'banana'));
+
+//    
+function filterByProducts(shoppingList, bought) {
+  return shoppingList.filter(function(el) {
+    return el.bought === false;
+  });
 }
-console.log(shoppingList[3]);
 
-
-console.log(shoppingList.splice(3, 2));
+console.log(filterByProducts(shoppingList, false));

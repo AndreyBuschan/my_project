@@ -1,30 +1,36 @@
 class Сircle {
 
-  constructor(R, D) {
-    this.R = R;
-    this.D = D;
+  constructor(radius) {
+    this.radius = radius;
   }
 
-  get radius() {
-    return this.R;
+  getRadius() {
+    return this.radius;
   }
 
-  set radius(R) {
-    this.R = Math.sqrt (S / Math.PI);
+  setRadius(radius) {
+    this.radius = Math.sqrt(square / Math.PI);
   }
 
-  get diameter() {
-    return this.D;
+  getDiameter() {
+    let diameter = this.radius * 2;
+    return diameter;
   }
 
-  square(D) {
-    return Math.PI * (this.R ** 2);
+  square() {
+    let square = Math.PI * (this.radius ** 2);
+    return square;
   }
 
-  length(R) {
-    return 2 * Math.PI * this.R;
+  length() {
+    let length = 2 * Math.PI * this.radius;
+    return length;
   }
 }
 
-let circle = new Сircle(5, 10);
-console.log(circle.radius, circle.diameter, circle.square, circle.length);
+let circle = new Сircle(5);
+
+circle.getRadius()
+circle.getDiameter()
+circle.square()
+circle.length()

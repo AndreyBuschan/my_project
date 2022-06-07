@@ -141,7 +141,6 @@ span + span {
 }
 
 .container__price {
-/*   flex: 0 0 22%; */
   margin-left: 50px;
 }
 
@@ -167,23 +166,3 @@ span + span {
   cursor: pointer;
 }
 
-.container__buyitnow:hover,
-.container__buyitnow:focus {
-  background-color: #ade4cd;
-} */
-
-/* .rating,
-.wheretobuy {
-  background-color: #212534;
-  position: absolute;
-  width: 600px;
-  height: 424px;
-  padding: 60px;
-  text-indent: 60px;
-  text-align: justify;
-  line-height: 22px;
-  color: #fff;
-  top: 115px;
-  left: 0;
-  display: none;
-}

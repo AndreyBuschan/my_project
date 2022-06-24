@@ -1,0 +1,152 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+div {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.search__container {
+  min-height: 300px;
+  max-height: 360px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url(../imges/ayUMWKe6Wow5ixLlKxxlp7IqTiI.jpeg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: white;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.search {
+  width: 100%;
+}
+
+form {
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+label {
+  cursor: default;
+}
+
+.input__main {
+  width: 97%;
+  max-height: 46px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  outline:none;
+}
+
+.input__button {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px 26px;
+  border: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(32, 211, 172, 1) 0%, rgba(2, 181, 226, 1) 100%);
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  font-weight: 700;
+}
+
+.search__drop-down {
+  margin-top: 20px;
+  width: 150px;
+  max-height: 46px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  outline:none;
+}
+
+.result {
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 2560px) {
+  .search__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .input__main {
+    width: 93%;
+  }  
+}
+
+
+@media screen and (max-width: 1439px) {
+  .search__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input__main {
+    width: 93%;
+  }  
+}
+
+@media screen and (max-width: 640px) {
+  .search__container {
+    min-height: 600px;
+    max-height: 660px;
+  }  
+
+  .input__main {
+    width: 80%;
+  }
+}  
+

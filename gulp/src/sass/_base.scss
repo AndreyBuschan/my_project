@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $main-color;
+  width: 500px;
+  margin: 0 auto;
+} 
+
+p {
+  color: $secondary-color;
+}

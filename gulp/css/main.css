@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(105, 79, 79);
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  color: rgb(223, 151, 163);
+}

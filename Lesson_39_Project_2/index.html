@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f40955bcec.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="slick-slider/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick-slider/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="slick-slider/slick-sizes.css" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+  <title>Monticello</title>
+</head>
+
+<body class="screen">
+  <section class="header__container">
+    <div class="header__nav--container">
+      <img class="header__nav--logo" src="images/Logo.png" alt="Monticello Logo" />
+
+      <div class="header__nav--links">
+        <a class="header__nav--links-text text__header--links smooth-scroll" href="#about">
+          <input class="input__menu" type="radio" id="contactChoice1" name="contact" value="#gallery" checked>
+          <label class="label__menu" for="contactChoice1">ABOUT US</label></a>
+        <a class="header__nav--links-text text__header--links smooth-scroll" href="#projects">
+          <input class="input__menu" type="radio" id="contactChoice2" name="contact" value="PROJECTS">
+          <label class="label__menu" for="contactChoice2">PROJECTS</label></a>
+        <a class="header__nav--links-text text__header--links smooth-scroll" href="#news">
+          <input class="input__menu" type="radio" id="contactChoice3" name="contact" value="NEWS">
+          <label class="label__menu" for="contactChoice3">NEWS</label></a>
+        <a class="header__nav--links-text text__header--links smooth-scroll" href="#form">
+          <input class="input__menu" type="radio" id="contactChoice4" name="contact" value="CONTACT">
+          <label class="label__menu" for="contactChoice4">CONTACT</label></a>
+      </div>
+
+      <div class="header__nav--media">
+        <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m23.7188 21h-2.3438v7h-3.125v-7h-2.5312v-2.9062h2.5312v-2.1876c0-.8333.1562-1.5416.4688-2.125.3124-.5833.75-1.0208 1.3124-1.3124.5834-.3126 1.25-.4688 2-.4688.3334 0 .6876.0208 1.0626.0625.375.0208.6666.0521.875.0937l.3124.0313v2.4687h-1.25c-.5833 0-1.0104.1563-1.2812.4688-.25.2917-.375.6562-.375 1.0938v1.875h2.7812z"
+            fill="#fff" />
+          <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+        </svg>
+        <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m26.3438 16.75c.0208.0833.0312.2188.0312.4062 0 1.1042-.2083 2.2084-.625 3.3126-.4167 1.0833-1.0104 2.0833-1.7812 3-.75.8958-1.7292 1.625-2.9376 2.1874-1.2083.5626-2.5416.8438-4 .8438-1.8333 0-3.5104-.4896-5.0312-1.4688.2292.0209.4896.0313.7812.0313 1.5209 0 2.8855-.4687 4.0938-1.4063-.7292 0-1.375-.2083-1.9375-.625-.5417-.4374-.9167-.9791-1.125-1.625.2083.0209.4063.0313.5937.0313.2917 0 .5834-.0313.875-.0937-.5-.1042-.9479-.3126-1.3437-.625-.3958-.3126-.7083-.6876-.9375-1.125-.2292-.4584-.3438-.948-.3438-1.4688v-.0625c.4584.2708.948.4167 1.4688.4375-.9792-.6667-1.4688-1.5833-1.4688-2.75 0-.5833.1563-1.1354.4688-1.6562.8125 1.0208 1.8021 1.8333 2.9688 2.4374 1.1874.6042 2.4479.9376 3.7812 1-.0417-.25-.0625-.5-.0625-.75 0-.8958.3125-1.6666.9375-2.3124.6458-.6459 1.4167-.9688 2.3125-.9688.9583 0 1.7604.3438 2.4063 1.0312.75-.1458 1.4479-.4062 2.0937-.7812-.25.7708-.7292 1.375-1.4375 1.8125.625-.0833 1.25-.2604 1.875-.5313-.4583.6667-1.0104 1.2396-1.6562 1.7188z"
+            fill="#fff" />
+          <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+        </svg>
+        <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m17.4688 17.4688c.7083-.7084 1.5624-1.0626 2.5624-1.0626s1.8438.3542 2.5313 1.0626c.7083.6874 1.0625 1.5312 1.0625 2.5312s-.3542 1.8542-1.0625 2.5625c-.6875.6875-1.5313 1.0313-2.5313 1.0313s-1.8541-.3438-2.5624-1.0313c-.6876-.7083-1.0313-1.5625-1.0313-2.5625s.3437-1.8438 1.0313-2.5312zm.9062 4.1874c.4583.4584 1.0104.6876 1.6562.6876.6459 0 1.198-.2292 1.6563-.6876.4583-.4583.6875-1.0104.6875-1.6562s-.2292-1.1979-.6875-1.6562c-.4583-.4584-1.0104-.6876-1.6563-.6876-.6458 0-1.1979.2292-1.6562.6876-.4583.4583-.6875 1.0104-.6875 1.6562s.2292 1.1979.6875 1.6562zm5.9688-5.9687c.1666.1458.25.3333.25.5625s-.0834.4271-.25.5938c-.1459.1666-.3334.25-.5626.25-.2291 0-.427-.0834-.5937-.25-.1667-.1667-.25-.3646-.25-.5938s.0833-.4167.25-.5625c.1667-.1667.3646-.25.5937-.25.2292 0 .4167.0833.5626.25zm2.6562 1.4375c.0208.5625.0312 1.5208.0312 2.875s-.0104 2.3125-.0312 2.875c-.0625 1.2708-.4479 2.2604-1.1562 2.9688-.6876.6874-1.6667 1.052-2.9376 1.0937-.5624.0417-1.5208.0625-2.875.0625-1.3541 0-2.3124-.0208-2.875-.0625-1.2708-.0625-2.25-.4375-2.9374-1.125-.2709-.25-.4896-.5417-.6563-.875s-.2917-.6563-.375-.9687c-.0625-.3126-.0937-.6771-.0937-1.0938-.0417-.5625-.0626-1.5208-.0626-2.875s.0209-2.3229.0626-2.9062c.0624-1.25.4374-2.2188 1.125-2.9063.6874-.7083 1.6666-1.0937 2.9374-1.1563.5626-.0208 1.5209-.0312 2.875-.0312 1.3542 0 2.3126.0104 2.875.0312 1.2709.0626 2.25.448 2.9376 1.1563.7083.6875 1.0937 1.6667 1.1562 2.9375zm-1.5 7c.0625-.1667.1146-.375.1562-.625.0417-.2708.073-.5833.0938-.9375.0208-.375.0312-.6771.0312-.9063 0-.2291 0-.552 0-.9687s0-.6458 0-.6875c0-.0625 0-.2917 0-.6875 0-.4167 0-.7396 0-.9687 0-.2292-.0104-.5209-.0312-.875-.0208-.375-.0521-.6876-.0938-.9376-.0416-.2708-.0937-.4895-.1562-.6562-.25-.6458-.6979-1.0938-1.3438-1.3438-.1666-.0624-.3854-.1145-.6562-.1562-.25-.0417-.5625-.0729-.9375-.0938-.3542-.0208-.6458-.0312-.875-.0312-.2083 0-.5313 0-.9687 0-.4167 0-.6459 0-.6876 0-.0416 0-.2708 0-.6874 0-.4167 0-.7396 0-.9688 0s-.5312.0104-.9062.0312c-.3542.0209-.6667.0521-.9376.0938-.25.0417-.4583.0938-.625.1562-.6458.25-1.0937.698-1.3437 1.3438-.0625.1667-.1146.3854-.1563.6562-.0416.25-.0729.5626-.0937.9376-.0208.3541-.0313.6458-.0313.875v.9687.6875.5938.75.75c.0209.3124.0417.5833.0626.8124.0208.2084.052.4271.0937.6563s.0833.4167.125.5625c.2708.6458.7187 1.0938 1.3437 1.3438.1667.0624.375.1145.625.1562.2709.0417.5834.0729.9376.0938.375.0208.6666.0312.875.0312h.9687.7187.6876.9687c.2292 0 .5208-.0104.875-.0312.375-.0209.6875-.0521.9375-.0938.2708-.0417.4896-.0938.6562-.1562.6459-.2709 1.0938-.7188 1.3438-1.3438z"
+            fill="#fff" />
+          <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="header__slider--container silder" id="about">
+      <div class="header__slider-1">
+        <div class="header__slider--title text__title">
+          <h1>SIMPLE & MODERN</h1>
+        </div>
+        <div class="header__slider--sub-title text__sub-title">
+          <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+        </div>
+      </div>
+      <div class="header__slider-2">
+        <div class="header__slider--title text__title">
+          <h1>SIMPLE & MODERN</h1>
+        </div>
+        <div class="header__slider--sub-title text__sub-title">
+          <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+        </div>
+      </div>
+      <div class="header__slider-3">
+        <div class="header__slider--title text__title">
+          <h1>SIMPLE & MODERN</h1>
+        </div>
+        <div class="header__slider--sub-title text__sub-title">
+          <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+        </div>
+      </div>
+      <div class="header__slider-4">
+        <div class="header__slider--title text__title">
+          <h1>SIMPLE & MODERN</h1>
+        </div>
+        <div class="header__slider--sub-title text__sub-title">
+          <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+        </div>
+      </div>
+      <div class="header__slider-5">
+        <div class="header__slider--title text__title">
+          <h1>SIMPLE & MODERN</h1>
+        </div>
+        <div class="header__slider--sub-title text__sub-title">
+          <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+        </div>
+      </div>
+    </div>
+    <div class="header__arrow--container">
+      <a class="smooth-scroll" href="#projects"><span
+          class="header__arrow--projects material-icons-outlined">expand_circle_down</span></a>
+    </div>
+  </section>
+
+
+  <section class="projects projects__container" id="projects">
+    <div class="projects__devider-line">
+      <img src="images/Line-dark.png" alt="Line" />
+    </div>
+    <h3 class="projects__header text__heading">WHAT WE DO</h3>
+    <div class="projects__trade-center">
+      <img class="projects__trade-center__image" src="images/Trade-center.png" alt="Trade-center" />
+      <div class="projects__trade-center__info">
+        <h5 class="projects__trade-center__info--sub-header text__sub-heading">
+          ONE WORLD
+        </h5>
+        <h4 class="projects__trade-center__info--header text__heading">
+          TRADE CENTER
+        </h4>
+        <p class="projects__trade-center__info--description text__description">
+          Increasing prosperity in our lives can be accomplished by having the
+          right frame of mind. The truth is, our thoughts are very powerful.
+        </p>
+        <button class="projects__trade-center__info--button button__light" type="button">
+          MORE DETAILS
+        </button>
+        <p class="projects__trade-center__info--location text__location">
+          <span class="do__trade-center__info--location-icon material-icons">location_on</span>New York City, United
+          States - 1776 feet
+        </p>
+      </div>
+    </div>
+
+    <div class="projects__commerce-center">
+      <div class="projects__commerce-center__info">
+        <h5 class="projects__commerce-center__info--sub-header text__sub-heading">
+          INTERNATIONAL
+        </h5>
+        <h4 class="projects__commerce-center__info--header text__heading">
+          COMMERCE CENTRE
+        </h4>
+        <p class="projects__commerce-center__info--description text__description">
+          Successful businesses have many things in common, today we'll look
+          at the big 'R' of recognition and how a digital advertising network
+          may help.
+        </p>
+        <button class="projects__commerce-center__info--button button__light" type="button">
+          MORE DETAILS
+        </button>
+        <p class="projects__commerce-center__info--location text__location">
+          <span class="do__trade-center__info--location-icon material-icons">location_on</span>Hong Kong - 1588 feet
+        </p>
+      </div>
+      <img class="projects__commerce-center__image" src="images/Commerce-center.png" alt="Trade-center" />
+    </div>
+  </section>
+
+
+  <section class="news news__container" id="news">
+    <div class="news__devider-line">
+      <img src="images/Line-light.png" alt="Line" />
+    </div>
+    <h3 class="news__header text__news--title">LATEST NEWS</h3>
+
+    <div class="news__card--container slider responsive">
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article1-Building.png" alt="Article1-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          SEE THE UNMATCHED BEAUTY OF THE GREAT.
+        </h5>
+        <p class="news__card--description text__news--description">
+          Directories are perfect for customers that are searching for...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article1-Profile.png" alt="ALJA BRUN" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              ALJA BRUN
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              20 Jan 2020
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article2-Buiding.png" alt="Article2-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          EFFECTIVE ADVERTISING POINTERS.
+        </h5>
+        <p class="news__card--description text__news--description">
+          Having a home based business is a wonderful asset to your life...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article2-Profile.png" alt="DOMINIC FREEMAN" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              DOMINIC FREEMAN
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              13 Dec 2019
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article3-Building.png" alt="Article3-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          HYPNOTIZE YOURSELF INTO THE GHOST.
+        </h5>
+        <p class="news__card--description text__news--description">
+          There are many things that are important to catalog design...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article3-Profile.png" alt="ALICE WARD" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              ALICE WARD
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              30 Nov 2019
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article1-Building.png" alt="Article1-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          SEE THE UNMATCHED BEAUTY OF THE GREAT.
+        </h5>
+        <p class="news__card--description text__news--description">
+          Directories are perfect for customers that are searching for...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article1-Profile.png" alt="ALJA BRUN" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              ALJA BRUN
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              20 Jan 2020
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article2-Buiding.png" alt="Article2-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          EFFECTIVE ADVERTISING POINTERS.
+        </h5>
+        <p class="news__card--description text__news--description">
+          Having a home based business is a wonderful asset to your life...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article2-Profile.png" alt="DOMINIC FREEMAN" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              DOMINIC FREEMAN
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              13 Dec 2019
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="news__card--wrapper">
+        <img class="news__card--image" src="images/Article3-Building.png" alt="Article3-Building" />
+        <h5 class="news__card--heading text__news--heading">
+          HYPNOTIZE YOURSELF INTO THE GHOST.
+        </h5>
+        <p class="news__card--description text__news--description">
+          There are many things that are important to catalog design...
+        </p>
+        <div class="news__card--profile">
+          <img class="news__card--profile__image" src="images/Article3-Profile.png" alt="ALICE WARD" />
+          <div class="news__card--profile__info">
+            <h4 class="news__card--profile__info--name text__news--name">
+              ALICE WARD
+            </h4>
+            <h4 class="news__card--profile__info--date text__news--date">
+              30 Nov 2019
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery gallery__container" id="gallery">
+    <div class="gallery__devider-line">
+      <img src="images/Line-dark.png" alt="Line" />
+    </div>
+    <h3 class="gallery__header text__heading">GALLERY</h3>
+    <div class="gallery__image--container">
+      <img class="gallery__image--1" src="images/Gallery-Image1.png" alt="Gallery-Image1" />
+      <img class="gallery__image--2" src="images/Gallery-Image2.png" alt="Gallery-Image2" />
+      <img class="gallery__image--3" src="images/Gallery-Image3.png" alt="Gallery-Image3" />
+      <img class="gallery__image--4" src="images/Gallery-Image4.png" alt="Gallery-Image4" />
+      <img class="gallery__image--5" src="images/Gallery-Image5.png" alt="Gallery-Image5" />
+    </div>
+    <div class="gallery__button">
+      <button type="button" class="button__light">SEE MORE</button>
+    </div>
+  </section>
+
+
+  <section class="position--container">
+    <div class="map__container">
+      <div id="map" class="map__image"></div>
+    </div>
+
+    <div class="form form__container" id="form">
+      <div class="form__devider-line">
+        <img src="images/Line-dark.png" alt="Line" />
+      </div>
+      <h3 class="form__header text__heading">GET IN TOUCH</h3>
+      <div class="contacts__container">
+        <div class="contacts__container--address">
+          <img src="images/Contacts.svg" alt="background">
+        </div>
+        <div class="form__info--container">
+          <input class="form__info--username" type="text" placeholder="Mollie Medina" />
+          <input class="form__info--email" type="email" placeholder="Email" />
+          <div class="form__button">
+            <button type="button" class="button__light">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__container">
+      <div class="footer__nav">
+        <img class="footer__nav--logo" src="images/Logo.png" alt="Monticello Logo" />
+        <div class="footer__nav--media">
+          <div class="header__nav--media">
+            <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m23.7188 21h-2.3438v7h-3.125v-7h-2.5312v-2.9062h2.5312v-2.1876c0-.8333.1562-1.5416.4688-2.125.3124-.5833.75-1.0208 1.3124-1.3124.5834-.3126 1.25-.4688 2-.4688.3334 0 .6876.0208 1.0626.0625.375.0208.6666.0521.875.0937l.3124.0313v2.4687h-1.25c-.5833 0-1.0104.1563-1.2812.4688-.25.2917-.375.6562-.375 1.0938v1.875h2.7812z"
+                fill="#fff" />
+              <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+            </svg>
+            <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m26.3438 16.75c.0208.0833.0312.2188.0312.4062 0 1.1042-.2083 2.2084-.625 3.3126-.4167 1.0833-1.0104 2.0833-1.7812 3-.75.8958-1.7292 1.625-2.9376 2.1874-1.2083.5626-2.5416.8438-4 .8438-1.8333 0-3.5104-.4896-5.0312-1.4688.2292.0209.4896.0313.7812.0313 1.5209 0 2.8855-.4687 4.0938-1.4063-.7292 0-1.375-.2083-1.9375-.625-.5417-.4374-.9167-.9791-1.125-1.625.2083.0209.4063.0313.5937.0313.2917 0 .5834-.0313.875-.0937-.5-.1042-.9479-.3126-1.3437-.625-.3958-.3126-.7083-.6876-.9375-1.125-.2292-.4584-.3438-.948-.3438-1.4688v-.0625c.4584.2708.948.4167 1.4688.4375-.9792-.6667-1.4688-1.5833-1.4688-2.75 0-.5833.1563-1.1354.4688-1.6562.8125 1.0208 1.8021 1.8333 2.9688 2.4374 1.1874.6042 2.4479.9376 3.7812 1-.0417-.25-.0625-.5-.0625-.75 0-.8958.3125-1.6666.9375-2.3124.6458-.6459 1.4167-.9688 2.3125-.9688.9583 0 1.7604.3438 2.4063 1.0312.75-.1458 1.4479-.4062 2.0937-.7812-.25.7708-.7292 1.375-1.4375 1.8125.625-.0833 1.25-.2604 1.875-.5313-.4583.6667-1.0104 1.2396-1.6562 1.7188z"
+                fill="#fff" />
+              <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+            </svg>
+            <svg class="svg" fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m17.4688 17.4688c.7083-.7084 1.5624-1.0626 2.5624-1.0626s1.8438.3542 2.5313 1.0626c.7083.6874 1.0625 1.5312 1.0625 2.5312s-.3542 1.8542-1.0625 2.5625c-.6875.6875-1.5313 1.0313-2.5313 1.0313s-1.8541-.3438-2.5624-1.0313c-.6876-.7083-1.0313-1.5625-1.0313-2.5625s.3437-1.8438 1.0313-2.5312zm.9062 4.1874c.4583.4584 1.0104.6876 1.6562.6876.6459 0 1.198-.2292 1.6563-.6876.4583-.4583.6875-1.0104.6875-1.6562s-.2292-1.1979-.6875-1.6562c-.4583-.4584-1.0104-.6876-1.6563-.6876-.6458 0-1.1979.2292-1.6562.6876-.4583.4583-.6875 1.0104-.6875 1.6562s.2292 1.1979.6875 1.6562zm5.9688-5.9687c.1666.1458.25.3333.25.5625s-.0834.4271-.25.5938c-.1459.1666-.3334.25-.5626.25-.2291 0-.427-.0834-.5937-.25-.1667-.1667-.25-.3646-.25-.5938s.0833-.4167.25-.5625c.1667-.1667.3646-.25.5937-.25.2292 0 .4167.0833.5626.25zm2.6562 1.4375c.0208.5625.0312 1.5208.0312 2.875s-.0104 2.3125-.0312 2.875c-.0625 1.2708-.4479 2.2604-1.1562 2.9688-.6876.6874-1.6667 1.052-2.9376 1.0937-.5624.0417-1.5208.0625-2.875.0625-1.3541 0-2.3124-.0208-2.875-.0625-1.2708-.0625-2.25-.4375-2.9374-1.125-.2709-.25-.4896-.5417-.6563-.875s-.2917-.6563-.375-.9687c-.0625-.3126-.0937-.6771-.0937-1.0938-.0417-.5625-.0626-1.5208-.0626-2.875s.0209-2.3229.0626-2.9062c.0624-1.25.4374-2.2188 1.125-2.9063.6874-.7083 1.6666-1.0937 2.9374-1.1563.5626-.0208 1.5209-.0312 2.875-.0312 1.3542 0 2.3126.0104 2.875.0312 1.2709.0626 2.25.448 2.9376 1.1563.7083.6875 1.0937 1.6667 1.1562 2.9375zm-1.5 7c.0625-.1667.1146-.375.1562-.625.0417-.2708.073-.5833.0938-.9375.0208-.375.0312-.6771.0312-.9063 0-.2291 0-.552 0-.9687s0-.6458 0-.6875c0-.0625 0-.2917 0-.6875 0-.4167 0-.7396 0-.9687 0-.2292-.0104-.5209-.0312-.875-.0208-.375-.0521-.6876-.0938-.9376-.0416-.2708-.0937-.4895-.1562-.6562-.25-.6458-.6979-1.0938-1.3438-1.3438-.1666-.0624-.3854-.1145-.6562-.1562-.25-.0417-.5625-.0729-.9375-.0938-.3542-.0208-.6458-.0312-.875-.0312-.2083 0-.5313 0-.9687 0-.4167 0-.6459 0-.6876 0-.0416 0-.2708 0-.6874 0-.4167 0-.7396 0-.9688 0s-.5312.0104-.9062.0312c-.3542.0209-.6667.0521-.9376.0938-.25.0417-.4583.0938-.625.1562-.6458.25-1.0937.698-1.3437 1.3438-.0625.1667-.1146.3854-.1563.6562-.0416.25-.0729.5626-.0937.9376-.0208.3541-.0313.6458-.0313.875v.9687.6875.5938.75.75c.0209.3124.0417.5833.0626.8124.0208.2084.052.4271.0937.6563s.0833.4167.125.5625c.2708.6458.7187 1.0938 1.3437 1.3438.1667.0624.375.1145.625.1562.2709.0417.5834.0729.9376.0938.375.0208.6666.0312.875.0312h.9687.7187.6876.9687c.2292 0 .5208-.0104.875-.0312.375-.0209.6875-.0521.9375-.0938.2708-.0417.4896-.0938.6562-.1562.6459-.2709 1.0938-.7188 1.3438-1.3438z"
+                fill="#fff" />
+              <circle cx="20" cy="20" opacity=".4" r="19.5" stroke="#fff" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright text__footer">
+        Copyrights © 2020 Montichello
+      </p>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="slick-slider/slick.min.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOrq1Pc1PzW3Z2ai9demlON-talgLdpqc&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

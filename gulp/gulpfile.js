@@ -87,8 +87,8 @@ exports.sass = cssTranspile;
 exports.js = jsCompile;
 exports.css = cssPostprefixer;
 exports.html = htmlMinify;
-exports.js = jsMinify;
-exports.css = cssClean;
+exports.js1 = jsMinify;
+exports.css1 = cssClean;
 exports.archive = archive;
 exports.build = gulp.series(clean, gukp.parallel (buildCss, buildJS, buildHTML), archive);
 

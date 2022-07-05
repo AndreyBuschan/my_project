@@ -8,17 +8,25 @@ const myCar = {
   averageSpeed: 50,
   tank: 50,
   consumption: 8,
-  driver1: "Andrey"
+  drivers: {
+    name: "Andrey",
+    hasAccess: true
+  }
 }
+
+/* myCar.drivers('Anna', folse); */
+/* console.log(myCar[6]); */
+console.log(myCar.drivers.name);
+
 
 //1.1
 console.log( myCar );
 
 //1.2
 myCar['driver2'] = 'Anna';
-// Если бы в задании было написано 'измените свойство объекта и добавьте туда водителя', 
-// то выглядело бы это следующим образом: 
-// myCar.driver1 = 'Andrey, Anna';
+myCar.drivers.name2 = "Anna";
+myCar.drivers.hasAccess2 = true;
+console.log(myCar.drivers);
 
 //1.3
 function refueling() {
@@ -31,7 +39,10 @@ function refueling() {
     }
   }
   
-  console.log( refueling() );
+  console.log(refueling());
+  //
+  myCar.function = refueling;
+  console.log(myCar.function());
 
 //1.4
 function timeMachine(distance) {
@@ -44,14 +55,28 @@ let time = distance / myCar.averageSpeed;
   }
 }
 
-console.log( timeMachine(200) );
-console.log( myCar.hasOwnProperty("driver1") );
+console.log(timeMachine(200));
+console.log(myCar.hasOwnProperty("drivers"));
 
 
-/* function driverСheck() {
-let name = myCar.driver1;
+timeMachine
 
-myCar.hasOwnProperty("driver1");
+
+//Норма
+
+const time = {
+  h: 12,
+  m: 49,
+  s: 44,
+  showTime: function () {
+    
+  },
+  changeBySeconds(seconds) {
+
+  }
 }
 
-console.log( driverСheck("Andrey") ); */
+time.changeBySeconds(30);
+time.showTime()
+
+console.log(`${time.h}:${time.m}:${time.s}`);

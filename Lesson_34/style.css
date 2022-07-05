@@ -20,13 +20,9 @@ body {
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  background: url(../img/bg.png) no-repeat;
+  background: url(../img/bg.png) no-repeat center/cover;
+  background: url(img/bg.png) no-repeat center/cover;
   background-size: 1000px 860px;
-  background-position-x: center;
-  background-position-y: center; 
-  position: absolute;
-  width: 1000px;
-  height: 860px;
   padding: 200px;
 }
 

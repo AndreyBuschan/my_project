@@ -1,118 +1,106 @@
-/* function myFn() {
-  return myFn.length; 
-}
-console.log(myFn(13, 24, 56)); */
+/* for (let key in myCar) {
+  console.log('key', key);
+  console.log('value', myCar[key]);
+} */
 
 
-//
-/* function calcfactorial(n) {
-  let factorial = 1;
-  let i = 0;
 
-  while (i < n) {
-    i++;
-    factorial = factorial * i; 
+
+/* const cart = {
+
+  additem: function (product, price) {
+
+    if (product in this) {
+      return this[product] = price + this[product]
+    }
+    this[product] = price;
   }
+} 
 
-  return factorial;
-}
+cart.additem(`table`, 300);
+cart.additem(`tv`, 1000);
+cart.additem(`table`, 400);
 
-console.log('calcfactorial', calcfactorial(10)); */
+console.log(cart);
+*/
 
-//
-/* 
-function toNumber(a, b, c) {
-  return Number(`${a}${b}${c}`)
-}
-console.log('toNumber-->', toNumber(1, 2, 3)); */
 
-//
-/* function calcSquare(w, h) {
-  if (arguments.length === 0) {
-    return 'No arguments';
+
+/* const cart = {
+  table: 700,
+  tv: 1000,
+
+  additem: function (product, price) {
+    this[product] = price;
+  },
+
+  calcSum: function () {
+    let sum = 0;
+
+    for (let key in this) {
+      if(typeof this[key] === 'number'){
+        sum += this[key];
+      }
+    }
+
+    return this.totalSum = sum;
   }
-
-  if (!h) {
-    return w ** 2;
-  }
-
-  return w * h;
 }
-console.log(calcSquare(5, 6)); */
 
-//
-/* function checkIsWork(num) {
-  let result = 0;
+cart.additem(`table`, 300);
+cart.additem(`tv`, 1000);
+cart.additem(`table`, 400); */
+/* cart.calcSum() */
+/* cart.totalSum; */
 
-  for (let i = 0; i < num; i++) {
-    if (num % i === 0) {
-      result = result + i;
+/* console.log(cart); */
+
+
+
+const car = {
+  type: "Toyota", 
+  model: "Rav4", 
+  year: 2019,
+  averageSpeed: 50,
+  tank: 50,
+  consumption: 8,
+  showInfo: function() {
+    return `Car model ${this.model}, car year - ${this.year}`;
+  },
+  refuel: function(amount) {
+    this.fuelAmount = amount;
+  },
+  addDriver: function(driver) {
+    this.driver = driver;
+  },
+  clacTime: function(distance, driverName) {
+    if (this.driver === driverName && this.driver.hasAccess) {
+      console.log('Yeah! Go! Go!');
+
+      const restFuelAmount = 0;
+
+      if (restFuelAmount >= this.fuelAmount){
+        const time = 0;
+
+        return time;
+      } else {
+        return 'Plz refuel car'
+      }
+
+    } else {
+      return 'No';
     }
   }
-
-  if (result === num) { //Закоментить
-    return true
-  } else {
-    return false;
-  }
-
-  return result === num ? true : false;
 }
 
-console.log(checkIsWork(6)); */
+car.addDriver({name: 'Oleg', hasAccess: false});
+console.log('car', car);
 
-//
-/* function checkIsPerfect(from, to) {
-  for (let i = from; i <= to; i++){
-    if (checkIsWork(i)) {
-      console.log(i);
-    }
-  }
+// Массыв ДЗ
+const shoppungList = [{name: 'apple', price: 345, quantity: 3, bought: true}, {name: 'orange'}]
+
+function removeItem(arr) {
+  ...
 }
 
-console.log(checkIsPerfect(5, 10000)); */
-
-
-
-
-// rest/spread ((a, b, c, ...numbers) залишок/ (...numbers) поширення)
-
-/* const showArds = (...nums) => {
-  console.log(nums.length);
-}
-console.log(showArds(1, 2, 4, 6));
-
-
-
-const findMinMax = (a, b, c, ...numbers) => {
-  const min = Math.min(...numbers);
-  const max = Math.max(...numbers);
-
-  return 'Min number is ${min}, Max number is ${max}.'
-}
-
-console.log(findMinMax (3, -1, 0, 5, 3, 6, 2, 67, 90, 34, 34, 77, 222, 90)); */
-
-
-
-// CollBack
-
-/* const isAllow = (age) => age < 21 ? false : true;
-
-const showErrorMsg = () => {
-  alert("Access denied")
-}
-
-const showSuccessMsg = () => {
-  alert("Access granted")
-}
-
-const handleAccess = (age, checkAge, showError, showSuccess) => {
-  if (checkAge(age)) {
-    showSuccess();
-  } else {
-    showError()
-  }
-}
-
-handleAccess(22, isAllow, showErrorMsg, showSuccessMsg); */
+removeItem(soppingList, 'banana');

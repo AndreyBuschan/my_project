@@ -4,17 +4,17 @@
   margin: 0 auto;
 
   &__slide1 {
-    background: url(../img/head1.png);
+    background: url(../img/head1.png) repeat/no-repeat;
     background-size: 105%;
   }
 
   &__slide2 {
-    background: url(../img/head2.png);
+    background: url(../img/head2.png) repeat/no-repeat;
     background-size: 105%;
   }
 
   &__slide3 {
-    background: url(../img/head3.png);
+    background: url(../img/head3.png) repeat/no-repeat;
     background-size: 105%;
   }
 }

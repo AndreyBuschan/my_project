@@ -7,7 +7,9 @@ $(document).ready(function () {
     dots: true,
 /*     autoplay: true */
   });
+});
 
+$(document).ready(function () {
   $('.sliderGitar').slick({
     dots: false,
     infinite: true,
@@ -17,8 +19,9 @@ $(document).ready(function () {
     arrows: true,
     variableWidth: true
   });
+});
 
-
+$(document).ready(function () {
   $('.sliderPartners').slick({
     dots: false,
     infinite: true,
